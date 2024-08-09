@@ -12,17 +12,47 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="selectCards">
+        <label for="numCards" class="form-label fs-4 fw-bold">Original</label>
+        <input
+          type="number"
+          id="numCards"
+          class="form-control-sm rounded-3 "
+          style="height: 40px;"
+        />
+
+        <button type="button" class="btn btn-light">Draw</button>
+        <button type="button" class="btn btn-light">Sort</button>
+      </div>
+
+      <div
+        id="cardContainer"
+        class="d-flex justify-content-center align-items-center "
+      >
+        <div
+          style="height: 70px; width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+        <div
+          style="height: 70px;width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+        <div
+          style="height: 70px; width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+        <div
+          style="height: 70px;width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+        <div
+          style="height: 70px;width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+        <div
+          style="height: 70px; width:60px; border: solid 4px white; border-radius: 15px;"
+        ></div>
+      </div>
+
+      <div class="bubbleLog">
+        <p>Buble Log</p>
       </div>
     </div>
   </body>
